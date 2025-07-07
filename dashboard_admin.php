@@ -14,7 +14,7 @@ $total_transactions = 0;
 $active_users = 0;
 $active_agents = 0;
 
-$conn = new mysqli("localhost", "root", "", "Mobipay");
+$conn = new mysqli("localhost", "root", "", "mobipay_db");
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
