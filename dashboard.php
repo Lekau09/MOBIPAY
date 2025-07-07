@@ -651,7 +651,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         </thead>
         <tbody>
           <?php
-          $conn = new mysqli("localhost", "root", "", "Mobipay");
+          $conn = new mysqli("localhost", "root", "", "mobipay_db");
           $sql = "SELECT type, amount, date, description FROM transaction WHERE user_id = ? ORDER BY date DESC LIMIT 5";
           $stmt = $conn->prepare($sql);
           $stmt->bind_param("i", $user_id);
