@@ -7,7 +7,7 @@ $success_message = "";
 // Handle signup form submission
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // Database connection
-    $conn = new mysqli("localhost", "root", "", "Mobipay");
+    $conn = new mysqli("localhost", "root", "", "mobipay_db");
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
     }
