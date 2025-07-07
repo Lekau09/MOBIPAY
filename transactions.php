@@ -5,7 +5,7 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== 'admin') {
     exit();
 }
 
-$conn = new mysqli("localhost", "root", "", "Mobipay");
+$conn = new mysqli("localhost", "root", "", "mobipay_db");
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
