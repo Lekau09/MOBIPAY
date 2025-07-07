@@ -22,7 +22,7 @@ if (!in_array($status, ['Active', 'Inactive'])) {
     exit;
 }
 
-$conn = new mysqli("localhost", "root", "", "Mobipay");
+$conn = new mysqli("localhost", "root", "", "mobipay_db");
 
 if ($conn->connect_error) {
     echo json_encode(['success' => false, 'message' => 'Database connection failed']);
